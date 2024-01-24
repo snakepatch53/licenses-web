@@ -1,0 +1,149 @@
+.sidebar {
+    position: relative;
+    top: 0;
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    background: #292d3e;
+}
+
+.sidebar .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.sidebar .head img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .head h3 {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.close-sidebar .sidebar h3 {
+    display: none;
+}
+.close-sidebar .sidebar p {
+    display: none;
+}
+
+.sidebar .head p {
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.sidebar .head p i {
+    margin-right: 5px;
+    font-size: 0.5rem;
+}
+
+.sidebar .info-head {
+    position: absolute;
+    bottom: 100%;
+    display: flex;
+    height: var(--header-height);
+    width: calc(100% + var(--header-height));
+}
+
+.sidebar .info-head h3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar .info-head button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.sidebar .info-head button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.close-sidebar .sidebar ul li a {
+    justify-content: center;
+}
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li a span {
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.close-sidebar .sidebar ul li a span {
+    display: none;
+}
+
+.sidebar ul li a i {
+    font-size: 0.8rem;
+}

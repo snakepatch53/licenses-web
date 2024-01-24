@@ -1,0 +1,101 @@
+.items-surveys {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+    overflow-y: auto;
+    max-height: calc(100vh - var(--header-height) - 180px);
+}
+
+.items-surveys li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.items-surveys li:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    transition: border, box-shadow 0.2s ease;
+}
+
+.items-surveys li .survey-head {
+    padding: 0 5px;
+    font-size: 1.6rem;
+    color: #0a2b74;
+}
+
+.items-surveys li .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.items-surveys li .info p {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.items-surveys li .info b {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.items-surveys li .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.items-surveys li .image img {
+    height: 70px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.items-surveys li .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.items-surveys li .actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    max-height: 35px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.items-surveys li .actions button:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.items-surveys li .actions button.edit {
+    background: #05b422;
+}
+
+.items-surveys li .actions button.dell {
+    background: #cf372b;
+}

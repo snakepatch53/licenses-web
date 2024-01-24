@@ -1,0 +1,92 @@
+.header {
+    background-color: #282c34;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.header .user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.header .user img {
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .user span {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.header .user i {
+    margin-top: 2px;
+    font-size: 0.7rem;
+}
+
+.header .user ul {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    background-color: #282c34;
+    list-style: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.header .user ul.open {
+    display: flex;
+}
+
+.header .user ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header .user ul li:hover {
+    color: #61dafb;
+}
+
+.header .user ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    background: #61dafb;
+    width: 100%;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.header .user ul li img {
+    width: calc(100% - 40px);
+    margin: auto;
+}
